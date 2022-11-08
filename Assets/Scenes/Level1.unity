@@ -247,7 +247,7 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1344028159}
     m_Modifications:
-    - target: {fileID: 2571671899602018177, guid: a1d20e7cfbf3f5340838dd44431f6123, type: 3}
+    - target: {fileID: 1666536469039806487, guid: a1d20e7cfbf3f5340838dd44431f6123, type: 3}
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
@@ -935,7 +935,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rb: {fileID: 1512973444}
-  fuerzaImpulso: 3
+  fuerzaImpulso: 4
 --- !u!1001 &1578045321
 PrefabInstance:
   m_ObjectHideFlags: 0

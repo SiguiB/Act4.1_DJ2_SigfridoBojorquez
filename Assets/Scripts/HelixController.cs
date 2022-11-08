@@ -7,9 +7,22 @@ public class HelixController : MonoBehaviour
     private Vector2 lastTapPosition;
     private Vector3 startPosition;
 
-    void Start()
+    public Transform topTransform;
+    public Transform metaTransform;
+
+    public GameObject helixLevelPrefab;
+
+    public List<Stage> allStages = new List<Stage>();
+    public float helixDistancia;
+
+    public List<GameObject> spawnLevels = new List<GameObject>();
+
+
+    private void Awake()
     {
         startPosition = transform.localEulerAngles;
+        helixDistancia = topTransform.localPosition.y - (metaTransform.localPosition.y + .1f);
+        /*LoadStage(0);*/
     }
 
     void Update()
@@ -33,5 +46,10 @@ public class HelixController : MonoBehaviour
         {
             lastTapPosition = Vector2.zero;
         }
+    }
+
+    public void LoadStage(int stageNumber)
+    {
+
     }
 }

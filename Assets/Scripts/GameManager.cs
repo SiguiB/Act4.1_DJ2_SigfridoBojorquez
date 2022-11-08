@@ -31,7 +31,8 @@ public class GameManager : MonoBehaviour
 
     public void RestartLevel()
     {
-        
+        singleton.actualScore = 0;
+        FindObjectOfType<PelotaController>().ResetPelota();
     }
 
     public void AgregaScore(int scoreToAdd)
