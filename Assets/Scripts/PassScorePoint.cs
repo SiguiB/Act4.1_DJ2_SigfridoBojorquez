@@ -8,6 +8,6 @@ public class PassScorePoint : MonoBehaviour
     void OnTriggerEnter(Collider other)
     {
        GameManager.singleton.AgregaScore(1);
-    
+       FindObjectOfType<PelotaController>().perfectPass++;    
     }
 }
