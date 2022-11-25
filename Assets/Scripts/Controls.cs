@@ -12,6 +12,7 @@ public class Controls : MonoBehaviour
 
     public void Salir() {
         Application.Quit();
+        Debug.Log("Salir");
     }
 
 }
